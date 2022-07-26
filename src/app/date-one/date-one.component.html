@@ -1,5 +1,6 @@
 <p>date-one works!</p>
 <div class="example-config">Selected value is: {{ value }}</div>
+
 <h3>Date picker</h3>
 <div class="example-wrapper datepicker">
   <p>Select a date:</p>
@@ -8,3 +9,19 @@
     [disabledDates]="disabledDates"
   ></kendo-datepicker>
 </div>
+<br />
+<br />
+
+<h3>Date picker with time</h3>
+<div class="example-config">Selected value is: {{ value }}</div>
+<div class="example-wrapper datepicker">
+  <p>Select date and time:</p>
+  <kendo-datetimepicker [(ngModel)]="value" [disabledDates]="disabledDates">
+  </kendo-datetimepicker>
+</div>
+<!-- <button (click)="disabled()">disabled</button>
+<button (click)="getTime()">get time</button> -->
+
+<!-- [disabled]="disabled" -->
+
+<!-- [min]="min" [max]="max" -->
