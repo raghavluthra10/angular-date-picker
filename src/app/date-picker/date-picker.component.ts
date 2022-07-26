@@ -9,7 +9,13 @@ import { Component, OnInit } from "@angular/core";
 export class DatePickerComponent implements OnInit {
   constructor() {}
 
-  selectedDate = "";
+  selectedDate: string = "";
+  disableTimeStart: string = "5:30 am";
+  disableTimeEnd: string = "7:30 am";
 
   ngOnInit() {}
+
+  viewDate() {
+    console.log(this.selectedDate);
+  }
 }
