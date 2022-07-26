@@ -9,14 +9,19 @@ import {
   DlDateTimePickerModule,
 } from "angular-bootstrap-datetimepicker";
 import { FormsModule } from "@angular/forms";
-import { DateOneComponent } from './date-one/date-one.component';
-import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
+import { DateOneComponent } from "./date-one/date-one.component";
+import { DateInputsModule } from "@progress/kendo-angular-dateinputs";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { SyncfusionComponent } from "./syncfusion/syncfusion.component";
+// import { DateTimePickerModule } from "@syncfusion/ej2-angular-calendars";
 
 @NgModule({
-  declarations: [AppComponent, DatePickerComponent, DateOneComponent],
+  declarations: [
+    AppComponent,
+    DatePickerComponent,
+    DateOneComponent,
+    SyncfusionComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,6 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     DateInputsModule,
     BrowserAnimationsModule,
+    // DateTimePickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
