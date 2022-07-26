@@ -1,6 +1,10 @@
 <p>date-one works!</p>
 <div class="example-config">Selected value is: {{ value }}</div>
+<h3>Date picker</h3>
 <div class="example-wrapper datepicker">
   <p>Select a date:</p>
-  <kendo-datepicker [(value)]="value"></kendo-datepicker>
+  <kendo-datepicker
+    [(value)]="value"
+    [disabledDates]="disabledDates"
+  ></kendo-datepicker>
 </div>

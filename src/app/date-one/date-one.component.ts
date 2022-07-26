@@ -6,8 +6,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./date-one.component.css"],
 })
 export class DateOneComponent implements OnInit {
-  value: Date = new Date(2000, 2, 10);
+  value: Date = new Date();
   constructor() {}
 
   ngOnInit() {}
+
+  disabledDates = (date: Date): boolean => {
+    return date.getDate() % 2 === 0;
+  };
 }
